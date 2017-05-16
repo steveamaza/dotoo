@@ -1,9 +1,12 @@
-import 'React' from 'react';
+import React from 'react';
+import Input from './Input.jsx'
 
 export default class Main extends React.Component {
-  render: function() {
+  render() {
     return (
-      <div className="main"></div>
+      <div className="main">
+        <Input />
+      </div>
     )
   }
 }

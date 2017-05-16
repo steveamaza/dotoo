@@ -1,10 +1,13 @@
 import React from 'react';
-import Input from './Input.jsx'
+import Container from './Container.jsx';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 export default class App extends React.Component {
   render() {
     return (
-        <Input />
+      <MuiThemeProvider>
+        <Container />
+      </MuiThemeProvider>
     );
   }
 }
