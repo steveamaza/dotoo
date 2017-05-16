@@ -1,14 +1,21 @@
 import React from 'react';
+import TextField from 'material-ui/TextField';
 
 export default class Input extends React.Component{
   render() {
 
     var inputStyle = {
-      padding: 8,
+      paddingTop: 4,
+      paddingBottom: 4,
+      paddingRight: 16,
+      paddingLeft: 16,
       margin: 8,
       color: "#333",
       border: "none",
-      maxWidth: 500
+      width: "70%"
+    };
+    var hintStyle = {
+      color: "#ccc"
     };
     var buttonStyle = {
       padding: 8,
@@ -20,7 +27,7 @@ export default class Input extends React.Component{
     return (
       <div>
         <form>
-          <input style={inputStyle} type="text" placeholder="+  Add Task"></input>
+          <TextField id="task_item" underlineShow={false} style={inputStyle} hintStyle={hintStyle} type="text" hintText="+  Add Task"></TextField>
           <button style={buttonStyle}>&#10003;</button>
         </form>
       </div>

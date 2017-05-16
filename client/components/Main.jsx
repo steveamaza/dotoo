@@ -1,12 +1,13 @@
 import React from 'react';
-import Input from './Input.jsx'
+import Paper from 'material-ui/Paper';
+import Input from './Input.jsx';
 
 export default class Main extends React.Component {
   render() {
     return (
-      <div className="main">
+      <Paper>
         <Input />
-      </div>
+      </Paper>
     )
   }
 }
