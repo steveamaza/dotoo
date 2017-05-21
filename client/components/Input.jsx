@@ -26,8 +26,8 @@ export default class Input extends React.Component{
 
     return (
       <div>
-        <form>
-          <TextField id="task_item" underlineShow={false} style={inputStyle} hintStyle={hintStyle} type="text" hintText="+  Add Task"></TextField>
+        <form onSubmit={this.addItem}>
+          <TextField id="task_item" underlineShow={false} ref={(a) => this._inputElement = a} style={inputStyle} hintStyle={hintStyle} type="text" hintText="+  Add Task"></TextField>
           <button style={buttonStyle}>&#10003;</button>
         </form>
       </div>
